@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link href="lightbox2/css/lightbox.css" rel="stylesheet" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<div class="container">
+    <div class="gallery-top">
+    <div class="lght pull-right"><span class="glyphicon glyphicon-arrow-right"></span> <b>use lightbox?</b> <input type="checkbox" id="use_lightbox"></div>
+    </div>
+</div>
+<br>
+<div class="container">
+    <div id="gallery">
+        <a href="files/pictures/orig/lcd_gymkren.jpg" class="g-link gallery-link"><img src="files/pictures/thumb/lcd_gymkren.png"></a>
+        <a href="files/pictures/orig/onionpi.jpg" class="g-link gallery-link"><img src="files/pictures/thumb/onionpi.png"></a>
+        <a href="files/pictures/orig/RaspiModelB.png" class="g-link gallery-link"><img src="files/pictures/thumb/RaspiModelB.png"></a>
+        <a href="files/pictures/orig/seashells.jpg" class="g-link gallery-link"><img src="files/pictures/thumb/seashells.jpg"></a>
+        <a href="files/pictures/orig/rpi_mini.jpg" class="g-link gallery-link"><img src="files/pictures/thumb/rpi_mini.jpg"></a>
+        <a href="files/pictures/orig/rpi.jpg" class="g-link gallery-link"><img src="files/pictures/thumb/rpi.jpg"></a>
+        <a href="files/pictures/orig/rpi_circuit.jpg" class="g-link gallery-link"><img src="files/pictures/thumb/rpi_circuit.jpg"></a>
+
+
+
+    </div>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://code.jquery.com/jquery.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script src="lightbox2/js/lightbox-2.6.min.js"></script>
+<script>
+
+
+
+    $('#use_lightbox').change(function() {
+        if ($('#use_lightbox').is(":checked")) {
+            $('.g-link').attr("data-lightbox", "image-1");
+        } else {
+            $('.g-link').removeAttr("data-lightbox");
+        }
+    })
+</script>
+</body>
+</html>
